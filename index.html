@@ -228,9 +228,6 @@ footer {
     color: #666;
     background-color: #eee;
 }
-/*
- * media screen queries
-*/
 @media only screen and (min-width: 1024px) {
     .content{
         width: auto;
@@ -329,6 +326,20 @@ footer {
 			<span class="login"><a href="#">登陆</a></span>
 		</div>
 	</header>
+	<br>
+	<script language="javascript">
+var msg="欢迎访问星斩工作室新网站";    //移动文字
+var interval = 200;            //移动速度
+var seq=0;
+
+function LenScroll() {
+  document.nextForm.lenText.value = msg.substring(seq, msg.length) + "   " + msg;
+  seq++;
+  if ( seq > msg.length )
+    seq = 0;
+  window.setTimeout("LenScroll();", interval);
+}
+</script>
 	<br>
 	<div class="content">
 		<div class="leftBox">
